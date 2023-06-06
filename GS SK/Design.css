@@ -1,0 +1,395 @@
+body{
+    background-image:linear-gradient(#A90432,#4f0218);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #FDB912;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: #A90432;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: gold;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: wheat;
+    color: white;
+  }
+#basketballMuseumMenu{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    display: none;
+}
+#volleyballMuseumMenu{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    display: none;
+}
+
+.Cup {
+   position: relative;
+   left: 75px;
+   top: 75px;
+}
+.Cup img{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #FDB912;
+    background-color: #A90432;
+}
+.Cup p{
+    width: 284.2px;
+    height: 115.5px;
+    border: 3px solid #FDB912;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin: 0;
+    background-color: #A90432;
+    color: wheat;
+    animation-name: animate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+.collection{
+    display: flex;
+    background-color: #FDB912;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: space-around;
+    border: 3px solid black;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.collection div{
+    margin: 10px;
+    padding: 20px;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px red;
+    animation-name: animate;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes animate {
+    0%{width: 70px;}
+    100%{width: 284.2px;}
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: red;
+  }
+
+.players img{
+  width: 93.6px;
+  height: 103.6px;
+  border: 1px solid #FDB912;
+} 
+.playercollection{
+  display: flex;
+  background-color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: space-around;
+  border: 3px solid black;
+  overflow-x: auto;
+  overflow-y: auto;
+  width: 60%;
+  margin: auto;
+} 
+.playername{
+  color: #FDB912;
+  font-size: 9px;
+}
+.playerposition{
+  color: #A90432;
+  font-size: 9px;
+}
+.playercollection div{
+  margin: 20px;
+  padding: 20px;
+}
+.titleofteamrooster{
+  font-size: 24px;
+  text-align: center;
+  color: #FDB912;
+}
+
+.fixture{
+  background-color: white;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  box-shadow: 2px 2px white;
+}
+.fixture img{
+  width: 463.2px;
+  height: 303.95px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  width: 90%;
+  text-align: center;
+}
+.fixture p{
+  font-size: 14px;
+  text-align: start;
+  margin-left: 30px;
+}
+.fixture div{
+  padding: 20px;
+  margin: 10px;
+}
+
+.fixture h5{
+  margin-left: 30px;
+}
+#europe{
+  color: #FF0000;
+  margin-left: 60px;
+}
+.championsleague{
+  color: #FF0000;
+}
+
+.coachs{
+  width: 70%;
+  display: flex;
+  background-color: white;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.coachs h3{
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #A90432;
+}
+.coachs table{
+  width: 80%;
+  margin: auto;
+  border: 3px solid #FDB912;
+}
+.coachs th,td{
+  text-align: center;
+  padding: 16px;
+  border: 3px solid #4f0218;
+}
+
+.coachs th{
+  color: #A90432;
+}
+.coachs img{
+  width: 100px;
+  height: 100px;
+}
+.historyofleague{
+  width: 55%;
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.historyofleague h3{
+  color: #A90432;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.historyofleague img{
+  width: 95%;
+  margin: auto;
+}
+.historyofleague h4{
+  margin-left: 40px;
+}
+.historyofleague p{
+  margin-top: 5px;
+  margin-left: 40px;
+}
+.leaguechamps{
+  margin-left: 40px;
+}
+#basketballmenu{
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  display: none;
+}
+.fibaeurocupeighteen{
+  display: flex;
+  background-color: white;
+  width: 55%;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.fibaeurocupeighteen h3{
+  color: #A90432;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fibaeurocupeighteen img{
+  width: 95%;
+  margin: auto;
+}
+.fibaeurocupeighteen p{
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.fibaeurocupnine{
+  display: flex;
+  background-color: white;
+  width: 55%;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.fibaeurocupnine img{
+  width: 95%;
+  margin: auto;
+}
+.fibaeurocupnine h3{
+  color: #A90432;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fibaeurocupnine p{
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.euroleaguewomen{
+  display: flex;
+  background-color: white;
+  width: 55%;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.euroleaguewomen img{
+  width: 95%;
+  margin: auto;
+}
+.euroleaguewomen h3{
+  color: #A90432;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.euroleaguewomen p{
+  margin-left: 40px;
+  margin-top: 40px;
+}
+#volleyballmenu{
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  display: none;
+}
+.indeximage{
+  width: 20%;
+  display: block;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mensfootball{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 70%;
+}
+.mensfootball img{
+  width: 295px;
+  height: 130px;
+}
+.content{
+  margin: 20px;
+}
+
+.titleofmenu{
+  width: 295px;
+  height: 40px;
+  background-color: #222;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.titleofmenu a{
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.basketball{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 70%;
+}
+.basketball img{
+  width: 295px;
+  height: 130px;
+}
+.volleyball{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 70%;
+}
+.volleyball img{
+  width: 295px;
+  height: 130px;
+
+}
